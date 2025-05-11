@@ -5,14 +5,10 @@ import TaskBoard from "./components/TaskBoard";
 import "./index.css";
 
 const App = () => {
-  // State for theme; default to light.
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    // Load Kanban state from localStorage
     loadFromLocalStorage();
-    
-    // Load the saved theme from localStorage, if available.
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setTheme(savedTheme);
@@ -25,7 +21,6 @@ const App = () => {
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    // Update the data attribute on <html> so that CSS can adjust styles.
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
   };

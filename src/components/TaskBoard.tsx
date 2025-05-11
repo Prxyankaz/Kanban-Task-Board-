@@ -117,20 +117,6 @@ const TaskBoard = () => {
                           <p>
                             Due: {t.dueDate} {isOverdue(t.dueDate) && <span style={{ color: "red" }}>(Overdue)</span>}
                           </p>
-                          <button
-                            onClick={() =>
-                              moveTask(
-                                t.id,
-                                col === "todo"
-                                  ? "inProgress"
-                                  : col === "inProgress"
-                                  ? "done"
-                                  : "todo"
-                              )
-                            }
-                          >
-                            Move
-                          </button>
                           <button onClick={() => deleteTask(t.id)}>Delete</button>
                         </div>
                       )}

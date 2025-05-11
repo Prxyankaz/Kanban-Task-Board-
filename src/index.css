@@ -515,27 +515,27 @@ input:checked + .toggle-slider:before {
     display: none;
   }
 }
-/* Enhanced Dark Mode */
+
 [data-theme="dark"] {
-  --bg-main: #121420; /* Darker base for better contrast */
-  --bg-sidebar: rgba(26, 29, 46, 0.98); /* More opaque for better readability */
-  --bg-card: #23273f; /* Slightly lighter than sidebar for hierarchy */
-  --bg-column: rgba(35, 39, 63, 0.8); /* Better contrast with cards */
-  --color-text: #f0f2f6; /* Softer white for less eye strain */
-  --color-text-secondary: #a0a4b8; /* Better readability for secondary text */
-  --color-border: rgba(80, 85, 120, 0.6); /* More visible borders */
-  --color-shadow: rgba(0, 0, 0, 0.3); /* Deeper shadows for depth */
-  --gradient-primary: linear-gradient(90deg, #5a9aea, #9a6cd9); /* More vibrant gradient */
+  --bg-main: #121420; 
+  --bg-sidebar: rgba(26, 29, 46, 0.98); 
+  --bg-card: #23273f; 
+  --bg-column: rgba(35, 39, 63, 0.8);
+  --color-text: #f0f2f6; 
+  --color-text-secondary: #a0a4b8;
+  --color-border: rgba(80, 85, 120, 0.6); 
+  --color-shadow: rgba(0, 0, 0, 0.3); 
+  --gradient-primary: linear-gradient(90deg, #5a9aea, #9a6cd9); 
   --gradient-button: linear-gradient(135deg, #5a9aea, #4a8ad9); 
   --gradient-button-hover: linear-gradient(135deg, #4a8ad9, #3a7ac9);
-  --color-accent: #5a9aea; /* Brighter accent color */
-  --color-active-bg: rgba(90, 154, 234, 0.25); /* More visible active state */
+  --color-accent: #5a9aea; 
+  --color-active-bg: rgba(90, 154, 234, 0.25); 
   --color-active-border: rgba(90, 154, 234, 0.6); 
-  --color-hover-bg: rgba(60, 65, 90, 0.9); /* More noticeable hover */
+  --color-hover-bg: rgba(60, 65, 90, 0.9); 
   --color-toggle-bg: #555;
 }
 
-/* Dark mode background adjustments */
+
 [data-theme="dark"] body {
   background-image: 
     radial-gradient(circle at 10% 20%, rgba(90, 154, 234, 0.08) 0%, transparent 20%),
@@ -547,7 +547,7 @@ input:checked + .toggle-slider:before {
   background: radial-gradient(circle, rgba(90, 154, 234, 0.08) 0%, transparent 70%);
 }
 
-/* Dark mode specific component enhancements */
+
 [data-theme="dark"] .sidebar {
   border-right-color: rgba(40, 45, 70, 0.8);
 }
