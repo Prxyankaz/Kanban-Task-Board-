@@ -17,7 +17,7 @@ A simple and responsive Kanban-style task management app built with **React**, *
 
 ## 📸 Preview
 
-![Kanban Demo](https://your-screenshot-or-demo-link.png)
+![Kanban Demo](https://kanban-task-board-livid.vercel.app/)
 
 ---
 
